@@ -1,0 +1,86 @@
+a.movielink, a.begenalink {
+    color: red;
+    text-decoration: none;
+}
+
+h1 {
+    color: #05386B;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-shadow: gray;
+}
+
+h2 {
+    color: #EDF5E1;
+    font-family: 'Comic Sans MS';
+}
+
+strong.adjectives {
+    color: black;
+    font-size: 1em;
+    font-weight: 900;
+}
+
+body {
+    background-color: lightgrey;
+}
+
+p {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5em;
+    color: #05386B;
+}
+
+li.courses {
+    color: #05386B;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.25em;
+}
+
+li.movies {
+    font-family: 'Courier New', Courier, monospace;
+    color: #05386B;
+    font-size: 1.25em;
+    line-height: 1em;
+}
+
+li.neighbors {
+    font-family: 'Courier New', Courier, monospace;
+    color: #05386B;
+    font-size: 1.25em;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+p::first-letter {
+    font-family: Georgia;
+    font-size: 75px;
+    line-height: 60px;
+    padding-top: 4px;
+    padding-right: 8px;
+    padding-left: 3px;
+}
+
+dl.moviedatalist {
+    color: blue;
+    line-height: 1em;
+    margin-top: 0em;
+    margin-bottom: 0em;
+    font-size: 30px;
+}
+
+dd.datalistdetail {
+    color: #EDF5E1;
+    font-size: 20px;
+    font-family: 'Comic Sans MS';
+}
+ol.movies{
+    display: flex;
+    flex-direction: column-reverse;
+}
+div.validators{
+    margin: auto;
+    text-align: right;
+}

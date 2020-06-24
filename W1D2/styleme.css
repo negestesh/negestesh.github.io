@@ -63,7 +63,7 @@ p::first-letter {
     padding-left: 3px;
 }
 
-dl.moviedatalist {
+dt.moviedatalist {
     color: blue;
     line-height: 1em;
     margin-top: 0em;

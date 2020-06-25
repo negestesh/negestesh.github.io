@@ -1,0 +1,138 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("images/background.png");
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 8pt;
+}
+
+#headerimage {
+    text-align: center;
+    background-image: url("images/bannerbg.png");
+    background-repeat: repeat-x;
+}
+
+h1 {
+    text-align: center;
+    font-size: 24pt;
+    font-weight: bold;
+    text-shadow: 3px 3px #999999;
+}
+
+#outermost {
+    margin: auto;
+    padding: 0;
+    width: 800px;
+    border: 4px solid gray;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+#rightside {
+    background-color: #A2B964;
+    width: 250px;
+    border-top-right-radius: 15px;
+    overflow: hidden;
+    margin-left: 550px;
+    float: right;
+}
+
+#leftside {
+    position: absolute;
+    width: 550px;
+    overflow: hidden;
+    margin-right: 250px;
+    border-top-left-radius: 15px;
+}
+
+#leftsideheader {
+    background-image: url(images/rbg.png);
+    background-repeat: repeat-x;
+    vertical-align: baseline;
+}
+
+#leftsideheader img {
+    vertical-align: baseline;
+}
+
+#audiencescore {
+    font-size: 48pt;
+    color: red;
+    font-weight: bold;
+    vertical-align: text-bottom;
+}
+
+#reviews {
+    overflow: hidden;
+    box-sizing: border-box;
+    padding-right: 2%;
+    padding: 0%;
+}
+
+#leftreviews {
+    float: left;
+    width: 47%;
+    margin-left: 1%;
+    margin-right: 1%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+div.floatingreviews {
+    overflow: hidden;
+    margin-left: 2%;
+    margin-bottom: 20pt;
+    padding: 0%;
+}
+
+p.column {
+    vertical-align: middle;
+}
+
+p.scoreimage {
+    background-color: #E8DC9B;
+    border: 2px solid gray;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 8px;
+    font-size: 8pt;
+    vertical-align: baseline;
+    overflow: hidden;
+}
+
+p img {
+    float: left;
+}
+
+#bottomtext {
+    clear: right;
+    text-align: center;
+    padding: 5px;
+    background-color: #A2B964;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-sizing: border-box;
+}
+
+#pages {
+    margin: 0%;
+    padding: 0%;
+}
+
+#information {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 10pt;
+    font-size: 8pt;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+dt.details {
+    line-height: 10pt;
+    font-weight: bold;
+}
+
+#validators {
+    float: right;
+}

@@ -1,0 +1,181 @@
+@media screen and (max-width:599px) {
+    body {
+        display: grid;
+        grid-template-rows: 75px 75px auto 75px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    #header {
+        background-color: #ADD8E6;
+        text-align: center;
+        font-size: 25px;
+        padding: 25px;
+        vertical-align: baseline;
+        box-sizing: border-box;
+        margin: 0%;
+        font-weight: bold;
+        grid-column: 1/4;
+    }
+    #navbar {
+        display: flex;
+        font-size: 25px;
+        background-color: #2F4F4F;
+        padding: 0%;
+        margin: 0%;
+        overflow: hidden;
+        grid-column: 1/4;
+        grid-row: 2;
+    }
+    li.navbarelements {
+        display: inline-block;
+        border-right: 2px black solid;
+        box-sizing: border-box;
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        margin: 0%;
+        height: 100%;
+        text-align: center;
+    }
+    menu.menus {
+        margin: 0%;
+        padding: 0%;
+        color: white;
+        vertical-align: text-bottom;
+        font-size: 25px;
+    }
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+    footer {
+        text-align: center;
+        background-color: #2F4F4F;
+        color: white;
+        padding: 25px;
+        font-size: 25px;
+        grid-column: 1/4;
+    }
+    div.columns {
+        height: 200px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: none;
+        grid-column: 1/4;
+    }
+    #column1 {
+        background-color: #AAAAAA;
+        grid-column: 1/span 1;
+        grid-row: 1/span 1;
+        padding-top: 10px;
+        padding-left: 10px;
+        font-size: 25px;
+    }
+    #column2 {
+        background-color: #BBBBBB;
+        grid-row: 2/ span 1;
+        grid-column: 1/span 3;
+        padding-top: 10px;
+        padding-left: 10px;
+        font-size: 25px;
+    }
+    #column3 {
+        background-color: #CCCCCC;
+        grid-column: 2/span 1;
+        grid-row: 1/span 1;
+        padding-top: 10px;
+        padding-left: 10px;
+        font-size: 25px;
+    }
+}
+
+@media screen and (min-width:600px) {
+    body {
+        display: grid;
+        grid-template-rows: 75px 75px auto 75px;
+        font-family: Arial, Helvetica, sans-serif
+    }
+    #header {
+        background-color: #ADD8E6;
+        text-align: center;
+        font-size: 25px;
+        padding: 25px;
+        vertical-align: baseline;
+        box-sizing: border-box;
+        margin: 0%;
+        font-weight: bold;
+        grid-column: 1/4;
+    }
+    #navbar {
+        display: flex;
+        font-size: 25px;
+        background-color: #2F4F4F;
+        padding: 0%;
+        margin: 0%;
+        overflow: hidden;
+        grid-column: 1/4;
+        grid-row: 2;
+    }
+    li.navbarelements {
+        display: inline-block;
+        border-right: 2px black solid;
+        box-sizing: border-box;
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        margin: 0%;
+        height: 100%;
+        text-align: center;
+    }
+    menu.menus {
+        margin: 0%;
+        padding: 0%;
+        color: white;
+        vertical-align: text-bottom;
+        font-size: 25px;
+    }
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+    footer {
+        text-align: center;
+        background-color: #2F4F4F;
+        color: white;
+        padding: 25px;
+        font-size: 25px;
+        grid-column: 1/4;
+    }
+    div.columns {
+        height: 200px;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: none;
+        grid-column: 1/4;
+    }
+    #column1 {
+        background-color: #AAAAAA;
+        grid-column: 1/span 1;
+        box-sizing: border-box;
+        padding-top: 10px;
+        padding-left: 10px;
+        font-size: 25px;
+    }
+    #column2 {
+        background-color: #BBBBBB;
+        grid-column: 2/span 1;
+        padding-top: 10px;
+        padding-left: 10px;
+        font-size: 25px;
+    }
+    #column3 {
+        background-color: #CCCCCC;
+        grid-column: 3/span 1;
+        padding-top: 10px;
+        padding-left: 10px;
+        font-size: 25px;
+    }
+}

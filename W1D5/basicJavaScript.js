@@ -101,6 +101,8 @@ document.writeln("Value: ["+d.toString() + "]<br/>");
 console.log(myFunctionTest(["procrastinate", "admit", "constitution"], filterLongestWords(["procrastinate", "and", "for", "admit", "turn","constitution"],4)));
 console.log(myFunctionTest(5, findLongestWord(["abcd", "abcde"])));
 console.log(myFunctionTest("abd", reverse("dba")));
+console.assert("abd"===reverse("dba"));
+console.assert(6===sum([1, 2, 3]));
 console.log(myFunctionTest(6, sum([1, 2, 3])));
 console.log(myFunctionTest(6, sum([1, 2, 3])));
 console.log(myFunctionTest(true, isVowel("e")));

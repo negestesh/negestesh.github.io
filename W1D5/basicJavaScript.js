@@ -82,6 +82,24 @@ function filterLongestWords(words, i) {
     return filteredWords;
 }
 
+function arraytester(array1, array2) {
+    if(array1.length !== array2.length){
+        return "Test Failed Due To:  different Lengths of Arrays found";
+    }
+    let equals = true;
+    for (let index = 0; index < array1.length; index++) {
+        if(array1[index] !== array2[index]){
+            equals= false;
+        }        
+    }    
+    if(!equals){
+        return "Test Failed Due To: arrays don't have the same values. Expected: " + array1 + " found" + array2;
+    }
+    else{
+        return "TEST SUCCEEDED";
+    }
+}
+
 /* modifies the jsfiddle examples as per the requirements */
 const a = [1, 3, 5, 3, 3];
 const b = a.map(function (elem, i, array) {
@@ -92,17 +110,17 @@ document.writeln("Values: [" + b.toString() + "]<br/>");
 const c = a.filter(function (elem, i, array) {
     return elem === 3;
 });
-document.writeln("Values: ["+c.toString() + "]<br/>");
+document.writeln("Values: [" + c.toString() + "]<br/>");
 const d = a.reduce(function (prevValue, elem, i, array) {
     return prevValue * elem;
 });
-document.writeln("Value: ["+d.toString() + "]<br/>");
+document.writeln("Value: [" + d.toString() + "]<br/>");
 
-console.log(myFunctionTest(["procrastinate", "admit", "constitution"], filterLongestWords(["procrastinate", "and", "for", "admit", "turn","constitution"],4)));
+console.log(arraytester(["procrastinate", "admit", "constitution"], filterLongestWords(["procrastinate", "and", "for", "admit", "turn", "constitution"], 4)));
 console.log(myFunctionTest(5, findLongestWord(["abcd", "abcde"])));
 console.log(myFunctionTest("abd", reverse("dba")));
-console.assert("abd"===reverse("dba"));
-console.assert(6===sum([1, 2, 3]));
+console.assert("abd" === reverse("dba"));
+console.assert(6 === sum([1, 2, 3]));
 console.log(myFunctionTest(6, sum([1, 2, 3])));
 console.log(myFunctionTest(6, sum([1, 2, 3])));
 console.log(myFunctionTest(true, isVowel("e")));

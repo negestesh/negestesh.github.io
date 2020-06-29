@@ -1,4 +1,5 @@
 window.onload = function () {
+  //html elements 
   let startButton = document.getElementById('start');
   let selectedAnimation = document.getElementById('animation');
   let stopButton = document.getElementById('stop');
@@ -12,13 +13,16 @@ window.onload = function () {
   selectedAnimation.onchange = showAnimationText;
   startButton.onclick = startAnimation;
 
-  let timer = null;
+  let timer = null; // timer for setInterval method
 
+  /* function that runs when the turbo check box is checked/unchecked */
   function turbo() {
-    let isChecked = speedSelector.checked;
+    let isChecked = speedSelector.checked;//state of the turbo checkbox
     let currentAnimationFrame = document.getElementById('text-area').value;
-    let arrayCounter = 0;
+    let arrayCounter = 0;//counter that sets the index of the current animation frame
     let separatedAnimations = animation.split('=====\n');
+
+    /* loop that gets the current index of the current animation frame */
     for (let i = 0; i < separatedAnimations.length; i++) {
       if (separatedAnimations[i] === currentAnimationFrame) {
         arrayCounter = i;
@@ -28,12 +32,13 @@ window.onload = function () {
 
     if (isChecked) {
       clearInterval(timer);
-      timer = setInterval(turboAnimator, 50);
+      timer = setInterval(turboAnimator, 50);//new animation speed
     } else {
       clearInterval(timer);
-      timer = setInterval(turboAnimator, 250);
+      timer = setInterval(turboAnimator, 250);//animation speed when turbo is unchecked
     }
 
+    /*the  function that changes the frames */
     function turboAnimator() {
       if (arrayCounter === 0) {
         let element = document.getElementById('text-area');
@@ -51,7 +56,7 @@ window.onload = function () {
     }
 
   }
-
+  /* function that changes the font size of the frame */
   function changeFontSize() {
     if (sizeSelector.value === 'Tiny') {
       let textArea = document.getElementById('text-area');
@@ -83,7 +88,8 @@ window.onload = function () {
       textArea.style.fontSize = '32pt';
     }
   }
-
+  /* function that stops the animation and resets the text area to
+   the initially selected animation type */
   function endAnimation() {
     if (timer !== null) {
       clearInterval(timer);
@@ -101,15 +107,15 @@ window.onload = function () {
     }
 
   }
-
+  /* function that is called when the start button is pressed */
   function startAnimation() {
-    animation = document.getElementById('text-area').value;
+    animation = document.getElementById('text-area').value;//gets the state of the text area before start button is pressed
     let separatedAnimations = animation.split('=====\n');
     let arrayCounter = 0;
     startButton.disabled = true;
     selectedAnimation.disabled = true;
     stopButton.disabled = false;
-
+    /* function that changes the frames */
     function animator() {
       if (arrayCounter === 0) {
         let element = document.getElementById('text-area');
@@ -131,7 +137,7 @@ window.onload = function () {
       timer = setInterval(animator, 250);
     }
   }
-
+  /* function that changes the initial animation text when animation type is selected */
   function showAnimationText() {
     let textArea = document.getElementById('text-area');
     textArea.value = ANIMATIONS[selectedAnimation.value];

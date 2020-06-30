@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Text Decorator</title>
+    <link href="decoratemytext.css" rel="stylesheet"/>
+    <link rel="shortcut icon" href="../Images/favicon-96x96.png" type="image/x-icon">
+
+
+    <!--
+    This is a widely-used JavaScript library named jQuery that has
+    many useful functions which we need.
+    Please don't remove this link or change its URL; leave it as-is!
+    -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+    <script src="decoratemytext.js"></script>
+    <!-- link to your script file here -->
+
+</head>
+
+<body>
+    <h1>Text Decorator</h1>
+
+    <div>
+        <img alt="very decorated!" src="decorated.gif" />
+    </div>
+
+    <!-- Your UI controls go here -->
+    <fieldset id="Text" name="" style="width: 400px">
+        <legend>Text</legend>
+        <textarea cols="30" id="userInput" name="input" rows="4">             Sample Item 1
+             Sample Item 2</textarea>
+    </fieldset>
+    <fieldset id="Decoration" style="width: 400px">
+        <legend>Decorations</legend>
+        <button id="Bigger">Bigger Decorations!</button>
+        <br>
+        <label for="bling"><input type="checkbox" name="Bling" id="bling">Bling</label>
+    </fieldset>
+</body>
+
+</html>

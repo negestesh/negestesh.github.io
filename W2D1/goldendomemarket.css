@@ -1,0 +1,17 @@
+#navbar{
+    background-color: #39A8E8;
+}
+#navbartitle{
+    color: white;
+}
+#hello{
+    text-align: right;
+}
+#products, #suppliers{
+    color: white;
+    
+}
+.btn-outline-secondary{
+    color: #5F84A6;
+    border-color: #5F84A6;
+}

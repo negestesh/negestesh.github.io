@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../Images/favicon-96x96.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="goldendomemarket.css">
+    <title>GoldenDome Market Form</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark" id="navbar">
+        <a style="padding-right: 2em;" class="navbar-brand">MUM Golden Dome Market : : : SRM System</a>
+        <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item" style="border-left: white 1px solid; padding-left: 2em; padding-right: 2em;">
+                    <a class="nav-link" href="#" id="products">Products</a>
+                </li>
+                <li class="nav-item" style="border-left: white 1px solid; padding-left: 2em;">
+                    <a class="nav-link" href="#" id="suppliers">Suppliers</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <span style="color: #ffffff;">Hello &nbsp;</span>
+                <a href="#" class="btn btn-light">Sign In</a>
+            </form>
+        </div>
+    </nav>
+
+    <div style="padding-top:1em;" class="container">
+        <div style="margin-bottom: 1em;">
+            <h5>New Product Form</h5>
+        </div>
+
+        <form id="newStudentForm" method="post" action="/finalexamwebapp/customers/register" th:object="${customer}">
+            <fieldset>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="ProductNumber">Product Number</label>
+                            <input id="ProductNumber" name="ProductNumber" type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="Quantity">Quantity In Stock</label>
+                            <input id="Quantity" name="Quantity" type="text" class="form-control">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="Name">Name</label>
+                            <input id="Name" name="Name" type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="Supplier">Supplier</label>
+                            <select type="text" class="form-control" name="Supplier"><option selected>Select a supplier</option></select>
+                        </div>
+                    </div>
+                </div> <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="unitPrice">Unit Price</label>
+                            <input id="unitPrice" name="unitPrice" type="text" class="form-control" placeholder="0.0">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="dateSupplied">Date Supplied</label>
+                            <input id="dateSupplied" name="dateSupplied" type="text" class="form-control" placeholder="yyyy-MM-dd">
+                        </div>
+                    </div>
+                </div>
+                
+            <div style="float:right;">                
+                <a href="#" class="btn btn-outline-secondary">Reset</a>&nbsp;&nbsp;&nbsp;
+                <a href="#" class="btn btn-outline-danger">Cancel</a>&nbsp;&nbsp;&nbsp;
+                <a href="#" class="btn btn-outline-primary">Add Product</a>
+            </div>
+        </fieldset>
+    </form>
+</div>
+</body>
+
+</html>

@@ -1,5 +1,3 @@
-/* eslint-disable linebreak-style */
-/* eslint-disable no-plusplus */
 /* global describe */
 /* global it */
 /* global assert */

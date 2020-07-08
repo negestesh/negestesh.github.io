@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="shortcut icon"
+      href="../Images/favicon-96x96.png"
+      type="image/x-icon"
+    />
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Clean Screen Lab</title>
+  </head>
+  <body>
+    <div id="canvas">
+      <div id="togglers">
+        <label for="Width" class="inputs">WIDTH</label><br />
+        <input type="number" name="Width" class="fields" step="50" id="width"/>
+        <label for="GrowthAmount" class="inputs">GROWTH AMOUNT</label><br />
+        <input type="number" name="GrowthAmount" class="fields" step="10" id="growthAmount" />
+        <label for="GrowthRate" class="inputs">GROWTH RATE</label><br />
+        <input type="number" name="GrowthRate" class="fields" step="250" id="growthRate"/>
+        <label for="NumberOfCircles" class="inputs">NUMBER OF CIRCLES</label><br />
+        <input type="number" name="NumberOfCircles" class="fields" step="2" id="numberOfCircles"/>
+        <button id="start" class="starter">Start</button>
+        <button id="stop" class="starter">Stop</button>
+      </div>
+    </div>
+  </body>
+</html>

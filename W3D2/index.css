@@ -1,0 +1,68 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+#canvas {
+  position: absolute;
+  width: 100%;
+  top: 0px;
+  bottom: 0px;
+  margin: auto;
+  background-image: url(1046.jpg);
+
+  overflow: auto;
+}
+.circle {
+  border-radius: 50%;
+  position: relative;
+  opacity: 50%;
+}
+#togglers {
+  bottom: 50px;
+  left: 20px;
+  position: fixed;
+  width: 200px;
+  height: auto;
+  margin: auto;
+  box-sizing: content-box;
+  z-index: 2;
+}
+.inputs {
+  margin-bottom: 10px;
+  color: white;
+  font-family: 'Roboto Condensed';
+}
+.fields {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: none;
+}
+.starter {
+  width: 175px;
+  display: inline-block;
+  padding: 0.3em 1.2em;
+  margin: 0 0.3em 0.3em 0;
+  border: 0.1em solid #ffffff;
+  border-radius: 2em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: black;
+  text-align: center;
+  transition: all 0.2s;
+  border: none;
+  margin-bottom: 10px;
+}
+.starter:hover {
+  background-color: #4095c6;
+  color: #ffffff
+}
+@media all and (max-width: 30em) {
+   .starter {
+    display: block;
+    margin: 0.2em auto;
+  }
+}

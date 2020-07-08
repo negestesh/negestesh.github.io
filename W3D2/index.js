@@ -1,3 +1,4 @@
+/* eslint-disable no-loop-func */
 window.onload = function () {
   const numberOfCircles = $('#numberOfCircles');
   const growthRate = $('#growthRate');
@@ -34,6 +35,12 @@ window.onload = function () {
             top: randPostions(),
             left: randPostions(),
             'z-index': 1,
+          },
+          mouseenter() {
+            $(this).css('opacity', '50%');
+          },
+          mouseleave() {
+            $(this).css('opacity', '100%');
           },
           click: removeCircle,
         }),

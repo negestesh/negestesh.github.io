@@ -16,7 +16,7 @@ body {
 .circle {
   border-radius: 50%;
   position: relative;
-  opacity: 50%;
+  
 }
 #togglers {
   bottom: 50px;

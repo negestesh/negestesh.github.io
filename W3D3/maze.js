@@ -25,6 +25,7 @@ window.onload = function () {
       $('#status').show();
       $('#status').text('You win! :] Click "S" to begin again.');
       $('.boundary').removeClass('youlose');
+      cheating = false;
     }
   }
   function cheater() {

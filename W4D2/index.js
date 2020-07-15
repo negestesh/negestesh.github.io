@@ -35,8 +35,7 @@ $(function () {
     $('#postList').append(items.join(''));
     $('.postId').hide();
   }
-  function fetchComments() {
-    alert('hellow');
+  function fetchComments() {    
     $(function () {
       const postId = $(this).attr('data-postId');
       console.log(postId);

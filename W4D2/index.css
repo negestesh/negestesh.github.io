@@ -1,0 +1,37 @@
+body {
+  font: 16pt 'Lucida Grande', Arial, sans-serif;
+}
+h1 {
+  text-align: center;
+}
+#container {
+  display: grid;
+  grid-template-areas:
+    'form form form'
+    'information posts comments';
+}
+#form {
+  grid-area: form;
+  margin: auto;
+  padding: 0;
+  margin-bottom: 10px;
+  text-align: center;
+}
+#posts {
+  grid-area: posts;
+  min-width: 400px;
+  font-size: 9px;
+}
+#information {
+  grid-area: information;
+  max-width: 250px;
+  font-size: 14px;
+}
+#comments {
+  grid-area: comments;  
+  min-width: 400px;
+}
+.comment{
+  margin-bottom: 5px;
+}
+
